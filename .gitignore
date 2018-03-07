@@ -1,2 +1,13 @@
-/target/
-/readme.mad
+.idea/*
+*.idea/*
+*.class
+**/logs/
+**/out/
+*.iml
+**/target/
+.settings/
+**/build/
+.gradle/
+target/
+**/classes/
+*.MF

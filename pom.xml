@@ -17,7 +17,8 @@
 		<dependency>
 			<groupId>javax.servlet</groupId>
 			<artifactId>javax.servlet-api</artifactId>
-			<version>3.1.0</version>
+			<version>3.0.1</version>
+			<scope>provided</scope>
 		</dependency>
 		<dependency>
 	<groupId>org.slf4j</groupId>
@@ -99,8 +100,7 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-tx</artifactId>
 			<version>3.2.13.RELEASE</version>
-		</dependency>
-		<dependency>
+		</dependency><dependency>
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-aspects</artifactId>
 			<version>3.2.13.RELEASE</version>
@@ -125,6 +125,18 @@
 			<groupId>org.springframework</groupId>
 			<artifactId>spring-webmvc</artifactId>
 			<version>3.2.13.RELEASE</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-servlet-api</artifactId>
+			<version>7.0.56</version>
+		</dependency>
+
+		<dependency>
+			<groupId>org.apache.tomcat</groupId>
+			<artifactId>tomcat-jsp-api</artifactId>
+			<version>7.0.57</version>
 		</dependency>
 		<!-- springMVC end -->
 		<!-- spring4 end -->
@@ -186,6 +198,8 @@
 				<artifactId>tomcat7-maven-plugin</artifactId>
 				<version>2.2</version>
 				<configuration>
+					<port>8088</port>
+					<path>/</path>
 					<uriEncoding>UTF-8</uriEncoding>
 				</configuration>
 			</plugin>
